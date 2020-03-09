@@ -370,6 +370,10 @@ ol {
 	background: #f2f7f8;
 }
 
+.header-site{
+   background: url(img/objective-bg.jpg);
+}
+
 .site-logo h2 {
 	font-size: 36px;
 }
