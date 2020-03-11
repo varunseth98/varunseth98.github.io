@@ -10,8 +10,13 @@
 /*----------------------------------------*/
 html,
 body {
-	height: 100%;
-	font-family: RedHatText,Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+  	background-image: url("../img/mattblack-bg.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	width: 100%;
+  	background-size: cover;
+
 }
 
 h1,
@@ -20,10 +25,11 @@ h3,
 h4,
 h5,
 h6 {
-	color: #2C3E50;
+	color: #000;
 	margin: 0;
 	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
@@ -36,8 +42,9 @@ h3 {
 
 p {
 	font-size: 18px;
-	color: #000000;
+	color: #000;
 	line-height: 1.8;
+	text-shadow: 1px 1px 2px #000000;
 }
 
 img {
@@ -86,7 +93,7 @@ ol {
 	height: 2px;
 	left: 0;
 	bottom: 0;
-	background: #40424a;
+	background: #000;
 }
 
 .set-bg {
@@ -155,21 +162,23 @@ ol {
 .site-btn {
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 18px;
+	text-shadow: 2px 2px 4px #000000;
 	min-width: 150px;
 	min-height: 20px;
 	text-align: center;
-	padding: 15px 10px 10px 10px;
+	padding: 15px 10px 10px;
 	position: relative;
-	background-color: #FF0017;
-	margin: 0px;
-	border-radius: 8px;
+	background-color: #CC0000;
+	margin: 15px;
+	border: 1px solid #000;
 	color: #FFF;
 	font-weight: 700;
+	box-shadow: 2px 2px 4px #000;
 }
 
 .site-btn:hover {
-	background-color: #CC0000;
+	background-color: #FF0017;
 	color: #FFF;
 }
 
@@ -366,23 +375,16 @@ ol {
 /*---------------------
 	Header section
 -----------------------*/
-.header-section.with-bg {
-	background-image: url("../img/header-bg.jpg");
+.header-section {
 	padding: 0px;
-	margin:  0px 10px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
 }
 
 .site-logo h2 {
-	font-size: 18px;
-	margin-top: 15px;
+	font-size: 36px;
 }
 
 .site-logo h2 a {
-	font-size: 36px;
-	color: #4682B4;
+	color: #40424a;
 }
 
 .site-logo p {
@@ -391,44 +393,41 @@ ol {
 }
 
 .header-buttons a {
-	margin: 0px 0px 0px 0px;
-	color: #FBFCFC;
-	border-radius: 0px;
+	margin: 25px 35px 25px auto;
 }
 
 /*---------------------
 	Hero section
 -----------------------*/
 .hero-section {
-	position: relative;
-	margin:  0px 10px;
-	padding: 15px 15px 15px 15px;
+	margin: 0px 50px;
+	padding: 50px 25px;
+	border: 1px solid;
 	background-image: url("../img/hero-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	box-shadow: 15px 15px 7.5px #000;
 }
 
 .hero-section .hero-text {
-	margin-top: 25px;
-	margin-bottom: 0px;
 	position: relative;
-  	background: rgb(0, 0, 0); /* Fallback color */
-  	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  	color: #f1f1f1;
-  	width: 100%;
-  	padding: 20px;
-  	
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	padding: 20px;
 }
 
 .hero-text h1 {
-	font-size: 100px;
 	color: #fff;
-	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 72px;
+	line-height: normal;
+	margin-bottom: 25px;
 }
+
 .hero-text p {
-	font-size: 24px;
 	color: #fff;
+	text-shadow: 1px 1px 2px #000000;
+	font-size: 18px;
 	line-height: 1.3;
 }
 
@@ -437,23 +436,18 @@ ol {
 }
 
 .hero-section .hero-info{
-	margin-top: 0px;
-	margin-bottom: 25px;
 	position: relative;
-  	background: rgb(0, 0, 0); /* Fallback color */
-  	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  	color: #f1f1f1;
-  	width: calc (100%+15px);
-  	padding: 20px;
-  	margin-left: -15px;
-
-  	
+	background: rgba(0, 0, 0, 0.5);
+	width: calc(100%+15px);
+	padding: 20px;
 }
 
 .hero-info h2 {
-	font-size: 48px;
-	margin-bottom: 30px;
 	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+	line-height: normal;
+	margin-bottom: 25px;
+	
 }
 
 .hero-info ul {
@@ -461,29 +455,33 @@ ol {
 }
 
 .hero-info ul li {
-	font-size: 24px;
+	text-shadow: 1px 1px 2px #000000;
+	font-size: 18px;
 	color: #fff;
 	margin-bottom: 15px;
 }
 
 .hero-info ul li span {
+	text-shadow: 1px 1px 2px #000000;
 	color: #fff;
 	display: inline-block;
 	min-width: 220px;
 }
 
 .hero-info ul li:last-child {
-	margin-bottom: 0;
+	margin-bottom: 0px;
 }
 
 /*---------------------
 	Social section
 -----------------------*/
 .social-section {
-	background-image: url("../img/header-bg.jpg");
+	margin: 25px 50px 75px;
+	background-image: url("../img/education-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin:  0px 10px;
+	border: 1px solid;
+	box-shadow: 15px 15px 7.5px #000;
 }
 
 .social-section .social-links {
@@ -493,10 +491,12 @@ ol {
 }
 
 .social-section .social-links a {
-	color: #fff;
+	color: #FFF;
 	font-size: 48px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 25px;
+	margin-left: 25px;
+	vertical-align: center;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .social-section .social-link-warp {
@@ -507,6 +507,7 @@ ol {
 	display: inline-block;
 	float: right;
 	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
 	position: relative;
 	z-index: 5;
 	padding-top: 10px;
@@ -515,31 +516,33 @@ ol {
 .social-section .social-link-warp:after {
 	position: absolute;
 	content: '';
-	width: 42%;
+	width: 33%;
 	height: 2px;
-	left: 23%;
+	left: 22.5%;
 	top: 50%;
 	margin-top: 1px;
 	background: #fff;
-	margin-right: 40px;
-	margin-left: 40px;
+	margin-right: 50px;
+	margin-left: 130px;
 }
 
 /*---------------------
 	Resume section
 ----------------------*/
-.resume-section.with-bg {
-	margin:  12.5px 100px 25px 100px;
-	background-image: url(../img/education-bg.jpg);
+.resume-section {
+	background-image: url("../img/paper-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border: 1px solid;
+	box-shadow: 15px 15px 7.5px #000;
+	margin: 50px 150px;
 }
 
 .resume-list {
 	list-style: none;
 	margin-left: 60px;
 	padding-left: 110px;
-	border-left: 2px solid #40424a;
+	border-left: 2px solid #000;
 }
 
 .resume-list li {
@@ -556,28 +559,34 @@ ol {
 	content: '';
 	width: 15px;
 	height: 15px;
-	border: 2px solid #40424a;
+	border: 2px solid #000;
 	border-radius: 50px;
-	background: #cacaca;
+	background: #fff;
 	top: 30px;
 	left: -118px;
 }
 
 .resume-list h2 {
-	font-size: 72px;
+	margin-bottom: 10px;
+}
+
+.resume-list h3 {
 	margin-bottom: 10px;
 }
 
 .resume-list h4 {
 	font-size: 16px;
 	text-transform: uppercase;
-	color: #808181;
 	margin-top: 10px;
 	margin-bottom: 45px;
 }
 
 .resume-list p {
-	margin-bottom: 0;
+	margin-bottom: 10px;
+}
+
+.resume-list a {
+	margin-left: 0px;
 }
 
 /*---------------------
@@ -1307,7 +1316,7 @@ ol {
 	}
 	.home-three-style .main-left-area {
 		padding-right: 15px;
-		/*padding-left: 15px;*/
+		padding-left: 15px;
 	}
 	.home-three-style .main-right-area {
 		padding-left: 50px;
@@ -1328,7 +1337,7 @@ ol {
 	.portfolio-warp {
 		padding: 0;
 	}
-	.comd {
+	.hidden-md {
 		display: none !important;
 	}
 	.icon-box {
